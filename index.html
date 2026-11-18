@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusión Gourmet | Catering Corporativo & Barra de Café con Propósito Social</title>
+    <meta name="description" content="Alta gastronomía artesanal, barras de café de especialidad, taquizas gourmet y coffee breaks ejecutivos con impacto en Responsabilidad Social Empresarial (RSE) e inclusión laboral.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cormorant Garamond (Editorial/Títulos) & Plus Jakarta Sans (Corporativo/Cuerpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Configuración personalizada de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        corp: {
+                            dark: '#1E2F3D',     /* Azul grisáceo profundo principal */
+                            slate: '#2C3E50',    /* Azul pizarra corporativo secundario */
+                            muted: '#4A6074'     /* Azul grisáceo suave */
+                        },
+                        sand: {
+                            light: '#F6F2EA',    /* Arena cálido claro para fondos principales */
+                            DEFAULT: '#EAE0D0',  /* Arena medio para secciones y tarjetas */
+                            dark: '#D8C8B0'      /* Arena oscuro para bordes suaves */
+                        },
+                        gold: {
+                            light: '#E5C878',
+                            DEFAULT: '#C5A059',  /* Dorado gourmet principal */
+                            bright: '#D4AF37',   /* Dorado acento brillante */
+                            dark: '#9E7B38'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'gourmet': '0 20px 40px -15px rgba(30, 47, 61, 0.12)',
+                        'gold-glow': '0 10px 25px -5px rgba(197, 160, 89, 0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Estilos personalizados para acabados editoriales y gourmet */
+        body {
+            background-color: #F6F2EA;
+            color: #1E2F3D;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .font-editorial {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Degradados corporativos y dorados */
+        .bg-corp-gradient {
+            background: linear-gradient(135deg, #1E2F3D 0%, #2C3E50 100%);
+        }
+
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #D4AF37 50%, #B38E46 100%);
+        }
+
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3DC99 50%, #C5A059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Patrón sutil de fondo */
+        .pattern-dots {
+            background-image: radial-gradient(#C5A059 0.75px, transparent 0.75px);
+            background-size: 24px 24px;
+        }
+
+        /* Transiciones suaves para tarjetas */
+        .service-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+        }
+
+        /* Scrollbar elegante */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F6F2EA;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2C3E50;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold selection:text-corp-dark">
+
+    <!-- ==========================================
+         BARRA SUPERIOR ANUNCIO B2B & RSE
+    =========================================== -->
+    <div class="bg-corp-dark text-sand-light text-xs py-2.5 px-4 border-b border-gold/25">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-gold/20 text-gold-light border border-gold/40">
+                    <i class="fa-solid fa-seedling mr-1"></i> Catering con Impacto RSE
+                </span>
+                <span class="hidden sm:inline text-sand/90">Cada servicio impulsa la inclusión laboral de jóvenes con discapacidad y fortalece la RSE de tu empresa.</span>
+            </div>
+            <div class="flex items-center gap-4 ml-auto">
+                <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer" class="hover:text-gold-light transition-colors flex items-center gap-1.5 font-medium">
+                    <i class="fa-brands fa-instagram text-gold-bright text-sm"></i>
+                    <span>@catering_inclusiongourmet</span>
+                </a>
+                <span class="text-gold/40">|</span>
+                <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20gustar%C3%ADa%20cotizar%20un%20servicio%20de%20catering%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer" class="text-gold-light hover:underline font-semibold flex items-center gap-1.5">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+                    <span>WhatsApp: 555616145219</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         1. HEADER / NAVEGACIÓN FIJA
+    =========================================== -->
+    <header id="main-header" class="sticky top-0 z-40 bg-sand-light/95 backdrop-blur-md border-b border-sand-dark/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo Inclusión Gourmet -->
+                <a href="#" class="flex items-center gap-3 group focus:outline-none">
+                    <div class="w-12 h-12 rounded-xl bg-corp-dark flex items-center justify-center border-2 border-gold shadow-md group-hover:scale-105 transition-transform">
+                        <!-- Icono SVG Emblema Gourmet & Inclusión -->
+                        <svg class="w-7 h-7 text-gold-bright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a8 8 0 00-8 8h16a8 8 0 00-8-8z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16h18M5 19h14" />
+                            <circle cx="12" cy="11" r="1.5" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block font-serif text-2xl sm:text-3xl font-bold tracking-tight text-corp-dark leading-none">
+                            Inclusión <span class="text-gold-dark italic font-semibold">Gourmet</span>
+                        </span>
+                        <span class="block text-[10px] uppercase tracking-[0.22em] text-corp-muted font-semibold mt-0.5">
+                            Catering Corporativo & Café
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Enlaces Navegación Desktop -->
+                <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-corp-slate">
+                    <a href="#proposito" class="hover:text-gold-dark transition-colors py-1">Nosotros & RSE</a>
+                    <a href="#servicios" class="hover:text-gold-dark transition-colors py-1">Servicios Corporativos</a>
+                    <a href="#barra-cafe" class="hover:text-gold-dark transition-colors py-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-mug-hot text-gold-dark text-xs"></i> Barra de Café Caliente
+                    </a>
+                    <a href="#galeria" class="hover:text-gold-dark transition-colors py-1">Galería IG</a>
+                    <a href="#contacto" class="hover:text-gold-dark transition-colors py-1">Cotizar por WhatsApp</a>
+                </nav>
+
+                <!-- Botones de Acción Desktop -->
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer" 
+                       title="Síguenos en Instagram @catering_inclusiongourmet"
+                       class="w-10 h-10 rounded-xl border border-corp-dark/20 bg-white/70 hover:bg-corp-dark hover:text-gold-bright text-corp-dark flex items-center justify-center transition-all shadow-sm">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20un%20evento%20corporativo." target="_blank" rel="noopener noreferrer"
+                       class="px-5 py-2.5 rounded-xl bg-corp-dark hover:bg-corp-slate text-sand-light font-semibold text-sm border border-gold/60 shadow-md hover:shadow-gold-glow transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                        <span>Cotizar al 555616145219</span>
+                    </a>
+                </div>
+
+                <!-- Botón Menú Móvil -->
+                <div class="flex items-center gap-2 lg:hidden">
+                    <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20un%20evento%20corporativo." target="_blank" rel="noopener noreferrer"
+                       class="w-10 h-10 rounded-xl border border-corp-dark/20 bg-white/80 text-emerald-700 flex items-center justify-center">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </a>
+                    <button id="mobile-menu-btn" aria-label="Abrir menú" class="w-11 h-11 rounded-xl bg-corp-dark text-gold-bright flex items-center justify-center focus:outline-none">
+                        <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-sand-light border-b border-sand-dark px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="#proposito" class="mobile-nav-link block px-4 py-2.5 rounded-xl hover:bg-sand text-corp-dark font-medium">Nosotros & Propósito RSE</a>
+            <a href="#servicios" class="mobile-nav-link block px-4 py-2.5 rounded-xl hover:bg-sand text-corp-dark font-medium">Servicios Corporativos</a>
+            <a href="#barra-cafe" class="mobile-nav-link block px-4 py-2.5 rounded-xl hover:bg-sand text-corp-dark font-medium">Barra de Café Caliente</a>
+            <a href="#galeria" class="mobile-nav-link block px-4 py-2.5 rounded-xl hover:bg-sand text-corp-dark font-medium">Galería @catering_inclusiongourmet</a>
+            <a href="#contacto" class="mobile-nav-link block px-4 py-2.5 rounded-xl hover:bg-sand text-corp-dark font-medium">Contacto & WhatsApp</a>
+            <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20un%20evento%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer"
+                   class="mobile-nav-link w-full py-3 rounded-xl bg-corp-dark text-sand-light text-center font-semibold border border-gold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                    <span>Mandar WhatsApp: 555616145219</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         2. HERO SECTION (ENFOQUE CORPORATIVO B2B)
+    =========================================== -->
+    <section class="relative bg-corp-gradient text-sand-light overflow-hidden py-16 sm:py-20 lg:py-24 border-b-4 border-gold">
+        <!-- Elementos decorativos de fondo -->
+        <div class="absolute inset-0 opacity-10 pattern-dots pointer-events-none"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gold/20 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-gold/15 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Columna Izquierda: Mensaje Principal y CTAs -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-gold/40 text-gold-light text-xs sm:text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-gold-bright animate-pulse"></span>
+                        <span>Catering Empresarial • Inclusión Laboral • Excelencia Artesanal</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.12] tracking-tight text-white">
+                        Alta Gastronomía y <span class="text-gold-gradient italic">Propósito Social</span> para tus Eventos Corporativos
+                    </h1>
+
+                    <p class="text-sand/90 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+                        Elevamos la experiencia de tus juntas ejecutivas, congresos, capacitaciones y celebraciones con <strong class="text-white font-semibold">barras de café caliente de especialidad, taquizas de guisado gourmet y coffee breaks artesanales</strong>, integrando puntualidad ejecutiva con inclusión laboral de jóvenes con discapacidad para fortalecer la Responsabilidad Social Empresarial (RSE).
+                    </p>
+
+                    <!-- Botones de Acción Directa a WhatsApp -->
+                    <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                        <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20quiero%20cotizar%20un%20evento%20corporativo%20por%20WhatsApp." target="_blank" rel="noopener noreferrer"
+                           class="px-7 py-4 rounded-xl bg-gold-gradient text-corp-dark font-bold text-base shadow-gold-glow hover:brightness-105 transition-all flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Cotizar por WhatsApp (555616145219)</span>
+                        </a>
+                        <a href="#servicios" class="px-7 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-sand-light font-semibold text-base border border-gold/40 backdrop-blur-sm transition-all flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-utensils text-gold-bright"></i>
+                            <span>Explorar Menús</span>
+                        </a>
+                    </div>
+
+                    <!-- Indicadores de Confianza B2B -->
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/15">
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-gold-bright">100%</p>
+                            <p class="text-xs text-sand/80 mt-0.5">Puntualidad Ejecutiva Garantizada</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-gold-bright">+ Impacto</p>
+                            <p class="text-xs text-sand/80 mt-0.5">Inclusión Laboral y Valor RSE</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-gold-bright">Atención</p>
+                            <p class="text-xs text-sand/80 mt-0.5">Directa al WhatsApp 555616145219</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Composición Visual Gourmet -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Marco dorado decorativo -->
+                        <div class="absolute -inset-3 rounded-3xl border-2 border-gold/40 translate-x-3 translate-y-3 pointer-events-none"></div>
+                        
+                        <div class="relative rounded-2xl overflow-hidden bg-corp-slate border border-gold/50 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=80" 
+                                 onerror="this.onerror=null;this.src='https://placehold.co/800x600/1E2F3D/D4AF37?text=Barra+de+Cafe+Caliente';"
+                                 alt="Barra de Café Caliente de Especialidad y Catering Inclusión Gourmet" 
+                                 class="w-full h-80 sm:h-96 object-cover object-center">
+                            <div class="absolute inset-0 bg-gradient-to-t from-corp-dark via-corp-dark/40 to-transparent"></div>
+
+                            <!-- Tarjeta flotante interna -->
+                            <div class="absolute bottom-0 inset-x-0 p-6">
+                                <div class="bg-corp-dark/90 backdrop-blur-md p-4 rounded-xl border border-gold/40">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-xs uppercase tracking-widest text-gold-bright font-semibold">
+                                            <i class="fa-solid fa-star mr-1"></i> Servicio Destacado en IG
+                                        </span>
+                                        <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer" class="text-xs text-sand/80 hover:text-gold-light flex items-center gap-1">
+                                            <i class="fa-brands fa-instagram"></i> @catering_inclusiongourmet
+                                        </a>
+                                    </div>
+                                    <h3 class="font-serif text-xl font-bold text-white">Barra de Café Caliente de Especialidad</h3>
+                                    <p class="text-xs text-sand/85 mt-1">
+                                        Espresso, capuchino clásico, latte caliente cremoso, café de olla tradicional con canela y piloncillo, chocolate caliente y tés herbales servidos por nuestro equipo inclusivo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Insignia flotante superior -->
+                        <div class="hidden sm:flex items-center gap-3 absolute -top-5 -left-5 bg-sand-light text-corp-dark px-4 py-3 rounded-xl shadow-xl border-2 border-gold">
+                            <div class="w-10 h-10 rounded-lg bg-corp-dark text-gold-bright flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-wider text-corp-dark">Proveedor Aliado RSE</p>
+                                <p class="text-[11px] text-corp-muted">Gastronomía con sentido humano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         3. PROPÓSITO E IMPACTO SOCIAL (DIFERENCIADOR B2B)
+    =========================================== -->
+    <section id="proposito" class="py-16 sm:py-24 bg-sand-light relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Encabezado de sección -->
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-corp-dark/10 text-corp-dark border border-corp-dark/20 text-xs font-bold uppercase tracking-widest mb-3">
+                    Nuestro Diferenciador B2B
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-corp-dark">
+                    Transforma los Eventos de tu Empresa en <span class="italic text-gold-dark">Impacto Social Positivo</span>
+                </h2>
+                <p class="mt-4 text-corp-slate text-base sm:text-lg leading-relaxed">
+                    En <strong>Inclusión Gourmet</strong> creemos que la alta gastronomía y la inclusión laboral van de la mano. Al contratarnos, tu empresa no solo ofrece alimentos y bebidas calientes de calidad artesanal, sino que activa su compromiso de <strong>Responsabilidad Social Empresarial (RSE)</strong>.
+                </p>
+            </div>
+
+            <!-- 3 Pilares de Valor para Empresas -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Pilar 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-sand-dark shadow-gourmet relative overflow-hidden group">
+                    <div class="w-14 h-14 rounded-2xl bg-corp-dark text-gold-bright flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-dark">01 • Inclusión Laboral Real</span>
+                    <h3 class="font-serif text-2xl font-bold text-corp-dark mt-2 mb-3">Talento Diverso Capacitado</h3>
+                    <p class="text-sm text-corp-slate leading-relaxed">
+                        Generamos empleo digno y capacitación gastronómica y de barismo para jóvenes con discapacidad motriz y del neurodesarrollo, quienes participan con orgullo desde la preparación artesanal hasta la atención cálida en tu evento.
+                    </p>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="bg-corp-dark text-sand-light rounded-2xl p-8 border-2 border-gold shadow-gourmet relative overflow-hidden group">
+                    <div class="absolute top-4 right-4 bg-gold/20 text-gold-light text-[10px] font-bold uppercase px-2.5 py-1 rounded-full border border-gold/40">
+                        Valor Corporativo
+                    </div>
+                    <div class="w-14 h-14 rounded-2xl bg-gold-gradient text-corp-dark flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-light">02 • Cumplimiento RSE & ESG</span>
+                    <h3 class="font-serif text-2xl font-bold text-white mt-2 mb-3">Compras con Propósito</h3>
+                    <p class="text-sm text-sand/85 leading-relaxed">
+                        Integramos en tus eventos señalética elegante que comunica a tus colaboradores, directivos y clientes que el catering contratado promueve la inclusión laboral, sumando valor directo a tus metas de cultura organizacional y diversidad.
+                    </p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-sand-dark shadow-gourmet relative overflow-hidden group">
+                    <div class="w-14 h-14 rounded-2xl bg-corp-dark text-gold-bright flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-plate-wheat"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-dark">03 • Sabor & Estética Ejecutiva</span>
+                    <h3 class="font-serif text-2xl font-bold text-corp-dark mt-2 mb-3">Calidad Gourmet Artesanal</h3>
+                    <p class="text-sm text-corp-slate leading-relaxed">
+                        Seleccionamos insumos frescos, café mexicano de altura recién molido, café de olla tradicional con canela y piloncillo, y guisados con sazón casero presentados en montajes impecables para juntas de consejo y congresos.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Banner Resumen RSE con Botón a WhatsApp -->
+            <div class="mt-12 bg-sand rounded-2xl p-6 sm:p-8 border border-gold/50 flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div class="flex items-start sm:items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-corp-dark text-gold-bright flex-shrink-0 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-xl sm:text-2xl font-bold text-corp-dark">¿Tu empresa celebra la Semana de Diversidad, Aniversario o Juntas Ejecutivas?</h4>
+                        <p class="text-sm text-corp-slate mt-1">Mándanos mensaje por WhatsApp al <strong>555616145219</strong> y diseñamos una experiencia a la medida de tu evento corporativo.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20nos%20interesa%20llevar%20su%20catering%20con%20impacto%20social%20a%20nuestra%20empresa." target="_blank" rel="noopener noreferrer"
+                   class="w-full lg:w-auto text-center px-6 py-3.5 rounded-xl bg-corp-dark hover:bg-corp-slate text-sand-light font-semibold text-sm border border-gold transition-all flex-shrink-0 flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                    <span>Cotizar por WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. SERVICIOS DE CATERING PARA EMPRESAS
+    =========================================== -->
+    <section id="servicios" class="py-16 sm:py-24 bg-sand/70 border-y border-sand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Encabezado y Filtros -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-gold/20 text-corp-dark border border-gold/50 text-xs font-bold uppercase tracking-widest mb-3">
+                        Portafolio Gastronómico B2B
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-corp-dark">
+                        Soluciones de Catering para <span class="italic text-gold-dark">Cada Formato Empresarial</span>
+                    </h2>
+                </div>
+
+                <!-- Botones de Filtro Interactivos -->
+                <div class="flex flex-wrap gap-2" id="service-filters">
+                    <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-corp-dark text-gold-bright border border-gold transition-all">
+                        Todos los Servicios
+                    </button>
+                    <button data-filter="cafe" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-corp-slate hover:bg-corp-dark/10 border border-sand-dark transition-all">
+                        Barra de Café Caliente
+                    </button>
+                    <button data-filter="taquiza" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-corp-slate hover:bg-corp-dark/10 border border-sand-dark transition-all">
+                        Taquizas Gourmet
+                    </button>
+                    <button data-filter="coffeebreak" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-corp-slate hover:bg-corp-dark/10 border border-sand-dark transition-all">
+                        Coffee Break & Box Lunch
+                    </button>
+                    <button data-filter="canapes" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-corp-slate hover:bg-corp-dark/10 border border-sand-dark transition-all">
+                        Canapés & Cócteles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid de Tarjetas de Servicios -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="services-grid">
+
+                <!-- 1. Barra de Café Caliente de Especialidad -->
+                <article data-category="cafe" class="service-card bg-white rounded-2xl overflow-hidden border border-sand-dark shadow-gourmet flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/800x500/1E2F3D/D4AF37?text=Barra+de+Cafe+Caliente';"
+                                 alt="Barra de Café Caliente de Especialidad para Eventos"
+                                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                            <div class="absolute top-4 left-4 bg-corp-dark/90 backdrop-blur-sm text-gold-bright text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-gold/50">
+                                <i class="fa-solid fa-mug-hot mr-1.5"></i> Favorito Corporativo
+                            </div>
+                            <div class="absolute bottom-3 right-3 bg-white/95 text-corp-dark text-xs font-bold px-3 py-1 rounded-lg shadow">
+                                Ideal para Congresos, Oficinas y Juntas
+                            </div>
+                        </div>
+                        <div class="p-6 sm:p-8">
+                            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-corp-dark">Barra de Café Caliente de Especialidad</h3>
+                            <p class="text-corp-slate text-sm sm:text-base mt-2 leading-relaxed">
+                                Experiencia de cafetería tradicional y de especialidad instalada directamente en tu oficina o evento. Nuestro equipo de baristas prepara al momento bebidas calientes con grano mexicano recién molido.
+                            </p>
+                            <ul class="mt-5 space-y-2 text-xs sm:text-sm text-corp-dark">
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Especialidades de Barista:</strong> Espresso sencillo y doble, Americano Gourmet, Capuchino Clásico, Latte Caliente Cremoso y Moka Caliente.</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Tradición & Infusiones:</strong> Café de Olla tradicional con canela y piloncillo, Chocolate Caliente espumoso y selección de Tés e Infusiones herbales calientes.</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Opciones de leche:</strong> Entera, deslactosada y alternativas vegetales para bebidas calientes.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 sm:px-8 pb-6 pt-4 border-t border-sand flex flex-wrap items-center justify-between gap-3">
+                        <button onclick="openMenuModal('cafe')" class="text-sm font-semibold text-corp-dark hover:text-gold-dark flex items-center gap-1.5">
+                            <i class="fa-regular fa-eye text-gold-dark"></i> Ver Carta de Café Caliente
+                        </button>
+                        <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20el%20servicio%20de%20Barra%20de%20Caf%C3%A9%20Caliente%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer"
+                           class="px-5 py-2.5 rounded-xl bg-corp-dark hover:bg-corp-slate text-sand-light text-xs sm:text-sm font-semibold border border-gold transition-all flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <span>Cotizar por WhatsApp</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 2. Taquizas de Guisado Gourmet -->
+                <article data-category="taquiza" class="service-card bg-white rounded-2xl overflow-hidden border border-sand-dark shadow-gourmet flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=900&q=80"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/800x500/2C3E50/D4AF37?text=Taquizas+de+Guisado+Gourmet';"
+                                 alt="Taquizas de Guisado Gourmet para Empresas"
+                                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                            <div class="absolute top-4 left-4 bg-corp-dark/90 backdrop-blur-sm text-gold-bright text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-gold/50">
+                                <i class="fa-solid fa-fire-burner mr-1.5"></i> Sazón Tradicional Ejecutivo
+                            </div>
+                            <div class="absolute bottom-3 right-3 bg-white/95 text-corp-dark text-xs font-bold px-3 py-1 rounded-lg shadow">
+                                Ideal para Comidas de Integración y Celebraciones
+                            </div>
+                        </div>
+                        <div class="p-6 sm:p-8">
+                            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-corp-dark">Taquizas de Guisado Gourmet</h3>
+                            <p class="text-corp-slate text-sm sm:text-base mt-2 leading-relaxed">
+                                La riqueza de la cocina mexicana presentada con estética ejecutiva e impecable higiene. Montaje en cazuelas artesanales con temperatura controlada, tortillas recién hechas al momento y barra de salsas y guarniciones gourmet.
+                            </p>
+                            <ul class="mt-5 space-y-2 text-xs sm:text-sm text-corp-dark">
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Guisados Estrella:</strong> Cochinita pibil, Chicharrón en salsa verde, Mole artesanal, Tinga de res y Rajas con crema.</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Opciones Vegetarianas:</strong> Setas al ajillo, Flor de calabaza con elote y Nopales guisados.</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Incluye:</strong> Arroz, frijoles refritos, aguas frescas de fruta natural y montaje completo.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 sm:px-8 pb-6 pt-4 border-t border-sand flex flex-wrap items-center justify-between gap-3">
+                        <button onclick="openMenuModal('taquiza')" class="text-sm font-semibold text-corp-dark hover:text-gold-dark flex items-center gap-1.5">
+                            <i class="fa-regular fa-eye text-gold-dark"></i> Ver Guisados Disponibles
+                        </button>
+                        <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20una%20Taquiza%20de%20Guisados%20Gourmet%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer"
+                           class="px-5 py-2.5 rounded-xl bg-corp-dark hover:bg-corp-slate text-sand-light text-xs sm:text-sm font-semibold border border-gold transition-all flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <span>Cotizar por WhatsApp</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 3. Coffee Break & Box Lunch Ejecutivo -->
+                <article data-category="coffeebreak" class="service-card bg-white rounded-2xl overflow-hidden border border-sand-dark shadow-gourmet flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=900&q=80"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/800x500/1E2F3D/D4AF37?text=Coffee+Break+Ejecutivo';"
+                                 alt="Coffee Break y Box Lunch Ejecutivo"
+                                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                            <div class="absolute top-4 left-4 bg-corp-dark/90 backdrop-blur-sm text-gold-bright text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-gold/50">
+                                <i class="fa-solid fa-briefcase mr-1.5"></i> Juntas & Capacitaciones
+                            </div>
+                            <div class="absolute bottom-3 right-3 bg-white/95 text-corp-dark text-xs font-bold px-3 py-1 rounded-lg shadow">
+                                Servicio Continuo o Empaque Individual
+                            </div>
+                        </div>
+                        <div class="p-6 sm:p-8">
+                            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-corp-dark">Coffee Break & Box Lunch Ejecutivo</h3>
+                            <p class="text-corp-slate text-sm sm:text-base mt-2 leading-relaxed">
+                                Diseñado para mantener la energía y concentración en juntas de consejo, talleres y sesiones de trabajo. Combinamos café caliente recién preparado, panadería artesanal horneada, bocadillos salados gourmet y fruta fresca.
+                            </p>
+                            <ul class="mt-5 space-y-2 text-xs sm:text-sm text-corp-dark">
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Opciones Saladas:</strong> Mini chapatas artesanales, croissants de jamón serrano o pavo, bagels y quiches.</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Opciones Dulces & Saludables:</strong> Galletas gourmet, brownies, brochetas de fruta, yogurt con granola y crudités.</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Box Lunch:</strong> Presentación individual ecológica con sello de inclusión social.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 sm:px-8 pb-6 pt-4 border-t border-sand flex flex-wrap items-center justify-between gap-3">
+                        <button onclick="openMenuModal('coffeebreak')" class="text-sm font-semibold text-corp-dark hover:text-gold-dark flex items-center gap-1.5">
+                            <i class="fa-regular fa-eye text-gold-dark"></i> Ver Opciones de Menú
+                        </button>
+                        <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20un%20Coffee%20Break%20o%20Box%20Lunch%20Ejecutivo%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer"
+                           class="px-5 py-2.5 rounded-xl bg-corp-dark hover:bg-corp-slate text-sand-light text-xs sm:text-sm font-semibold border border-gold transition-all flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <span>Cotizar por WhatsApp</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4. Canapés y Cócteles Empresariales -->
+                <article data-category="canapes" class="service-card bg-white rounded-2xl overflow-hidden border border-sand-dark shadow-gourmet flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=900&q=80"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/800x500/2C3E50/D4AF37?text=Canapes+y+Cocteles+Empresariales';"
+                                 alt="Canapés y Cócteles Empresariales"
+                                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                            <div class="absolute top-4 left-4 bg-corp-dark/90 backdrop-blur-sm text-gold-bright text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-gold/50">
+                                <i class="fa-solid fa-champagne-glasses mr-1.5"></i> Eventos de Gala & Cierres
+                            </div>
+                            <div class="absolute bottom-3 right-3 bg-white/95 text-corp-dark text-xs font-bold px-3 py-1 rounded-lg shadow">
+                                Ideal para Aniversarios, Lanzamientos y Networking
+                            </div>
+                        </div>
+                        <div class="p-6 sm:p-8">
+                            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-corp-dark">Canapés y Cócteles Empresariales</h3>
+                            <p class="text-corp-slate text-sm sm:text-base mt-2 leading-relaxed">
+                                Alta cocina en pequeño formato para eventos de networking, inauguraciones, premiaciones y brindis corporativos. Bocadillos de autor diseñados para degustarse de pie con elegancia, acompañados de charcutería fina.
+                            </p>
+                            <ul class="mt-5 space-y-2 text-xs sm:text-sm text-corp-dark">
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Bocadillos Salados:</strong> Tapas de salmón ahumado, bruschettas de higo y queso de cabra, tartaletas y volovanes.</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Mesas de Quesos:</strong> Tablas gourmet de quesos maduros, carnes frías, frutos secos y pan artesanal.</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-check text-gold-dark"></i>
+                                    <span><strong>Repostería Fina:</strong> Petit fours, mini tartas de frutos rojos, macarons y trufas de chocolate.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 sm:px-8 pb-6 pt-4 border-t border-sand flex flex-wrap items-center justify-between gap-3">
+                        <button onclick="openMenuModal('canapes')" class="text-sm font-semibold text-corp-dark hover:text-gold-dark flex items-center gap-1.5">
+                            <i class="fa-regular fa-eye text-gold-dark"></i> Ver Catálogo de Bocadillos
+                        </button>
+                        <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20el%20servicio%20de%20Canap%C3%A9s%20y%20C%C3%B3ctel%20Empresarial." target="_blank" rel="noopener noreferrer"
+                           class="px-5 py-2.5 rounded-xl bg-corp-dark hover:bg-corp-slate text-sand-light text-xs sm:text-sm font-semibold border border-gold transition-all flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <span>Cotizar por WhatsApp</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4.5 EXPERIENCIA BARRA DE CAFÉ CALIENTE DE ESPECIALIDAD
+    =========================================== -->
+    <section id="barra-cafe" class="py-16 sm:py-24 bg-corp-dark text-sand-light relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 pattern-dots pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Descripción de la Barra de Café Caliente -->
+                <div class="lg:col-span-5 space-y-5">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-gold/20 text-gold-bright border border-gold/40 text-xs font-bold uppercase tracking-widest">
+                        El Sello de @catering_inclusiongourmet
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">
+                        Barra de Café Caliente & <span class="text-gold-gradient italic">Tradición Mexicana</span>
+                    </h2>
+                    <p class="text-sand/85 text-sm sm:text-base leading-relaxed">
+                        Sabemos que una gran conversación de negocios comienza con una taza caliente recién preparada. Llevamos a tu empresa una estación completa de café donde nuestros baristas preparan al momento bebidas clásicas de espresso, café de olla tradicional e infusiones herbales.
+                    </p>
+                    
+                    <!-- Selector interactivo de Especialidades Calientes -->
+                    <div class="bg-corp-slate/80 p-5 rounded-2xl border border-gold/30 space-y-4">
+                        <p class="text-xs font-bold uppercase tracking-wider text-gold-light">
+                            <i class="fa-solid fa-mug-hot mr-1"></i> Explora nuestras preparaciones calientes:
+                        </p>
+                        <div class="flex flex-wrap gap-2" id="hot-drink-buttons">
+                            <button onclick="showHotDrinkDetail('espresso')" class="hot-drink-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-gold text-corp-dark transition-all">
+                                Espresso & Americano
+                            </button>
+                            <button onclick="showHotDrinkDetail('capuchino')" class="hot-drink-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-corp-dark/70 text-sand-light hover:bg-gold/20 border border-gold/30 transition-all">
+                                Capuchino & Latte
+                            </button>
+                            <button onclick="showHotDrinkDetail('olla')" class="hot-drink-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-corp-dark/70 text-sand-light hover:bg-gold/20 border border-gold/30 transition-all">
+                                Café de Olla Tradicional
+                            </button>
+                            <button onclick="showHotDrinkDetail('chocolate')" class="hot-drink-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-corp-dark/70 text-sand-light hover:bg-gold/20 border border-gold/30 transition-all">
+                                Moka, Chocolate & Tés
+                            </button>
+                        </div>
+                        <div id="hot-drink-display" class="p-4 rounded-xl bg-corp-dark/90 border border-gold/20 text-xs sm:text-sm text-sand/90">
+                            <strong class="text-gold-bright block mb-1">Espresso Sencillo, Doble & Americano Gourmet:</strong>
+                            Extracción al momento con grano mexicano 100% arábica de altura, cuerpo balanceado y aroma intenso para iniciar juntas ejecutivas y congresos.
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20quiero%20cotizar%20la%20Barra%20de%20Caf%C3%A9%20Caliente%20para%20un%20evento%20en%20mi%20empresa." target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-gold-gradient text-corp-dark font-bold text-sm shadow-gold-glow hover:brightness-105 transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Reservar Barra de Café al 555616145219</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjetas de Menú de Café Caliente (Exclusivamente Bebidas Calientes) -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-corp-slate/70 backdrop-blur-sm p-6 rounded-2xl border border-gold/30 hover:border-gold transition-all">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-11 h-11 rounded-xl bg-gold/20 text-gold-bright flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-mug-saucer"></i>
+                            </span>
+                            <span class="text-xs font-semibold text-gold-light uppercase tracking-wider">Barismo de Especialidad</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-2">Clásicos Calientes al Momento</h3>
+                        <p class="text-xs text-sand/80 mb-4">Grano mexicano 100% arábica de tueste medio extraído al instante por nuestros baristas.</p>
+                        <ul class="space-y-2.5 text-xs text-sand-light border-t border-white/10 pt-3">
+                            <li class="flex justify-between"><span>Espresso Sencillo y Doble</span><span class="text-gold-bright">Caliente</span></li>
+                            <li class="flex justify-between"><span>Americano Gourmet</span><span class="text-gold-bright">Caliente</span></li>
+                            <li class="flex justify-between"><span>Capuchino Clásico Espumoso</span><span class="text-gold-bright">Caliente</span></li>
+                            <li class="flex justify-between"><span>Latte Caliente Cremoso</span><span class="text-gold-bright">Caliente</span></li>
+                            <li class="flex justify-between"><span>Moka Caliente con Cacao</span><span class="text-gold-bright">Caliente</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-corp-slate/70 backdrop-blur-sm p-6 rounded-2xl border border-gold/30 hover:border-gold transition-all">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-11 h-11 rounded-xl bg-gold/20 text-gold-bright flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </span>
+                            <span class="text-xs font-semibold text-gold-light uppercase tracking-wider">Tradición & Bienestar</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-2">Café de Olla, Cacao & Tés</h3>
+                        <p class="text-xs text-sand/80 mb-4">Opciones reconfortantes y aromáticas ideales para acompañar panadería artesanal o taquizas.</p>
+                        <ul class="space-y-2.5 text-xs text-sand-light border-t border-white/10 pt-3">
+                            <li class="flex justify-between"><span>Café de Olla con Canela y Piloncillo</span><span class="text-gold-bright">Tradicional</span></li>
+                            <li class="flex justify-between"><span>Chocolate Caliente Espumoso</span><span class="text-gold-bright">Artesanal</span></li>
+                            <li class="flex justify-between"><span>Selección de Tés Calientes</span><span class="text-gold-bright">Incluido</span></li>
+                            <li class="flex justify-between"><span>Infusiones Herbales Calientes</span><span class="text-gold-bright">Incluido</span></li>
+                            <li class="flex justify-between"><span>Leche Entera, Deslactosada y Vegetal</span><span class="text-gold-bright">Opciones</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         5. GALERÍA / FEED INSPIRADO EN INSTAGRAM
+    =========================================== -->
+    <section id="galeria" class="py-16 sm:py-24 bg-sand border-t border-sand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Cabecera Estilo Perfil Instagram -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-sand-dark shadow-gourmet mb-12 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+                    <div class="w-20 h-20 rounded-full p-1 bg-gold-gradient flex-shrink-0">
+                        <div class="w-full h-full rounded-full bg-corp-dark flex items-center justify-center text-gold-bright text-2xl font-serif font-bold">
+                            IG
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-corp-dark">@catering_inclusiongourmet</h2>
+                            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-gold/20 text-corp-dark border border-gold">
+                                <i class="fa-solid fa-check-circle text-gold-dark mr-1"></i> Catering & Café
+                            </span>
+                        </div>
+                        <p class="text-sm text-corp-slate mt-1 max-w-xl">
+                            Barras de café caliente de especialidad, taquizas de guisado gourmet, canapés y coffee breaks corporativos con impacto social e inclusión laboral.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer"
+                   class="px-6 py-3.5 rounded-xl bg-corp-dark hover:bg-corp-slate text-sand-light font-semibold text-sm border border-gold shadow-md transition-all flex items-center gap-2.5 flex-shrink-0">
+                    <i class="fa-brands fa-instagram text-gold-bright text-lg"></i>
+                    <span>Ver Perfil Oficial en Instagram</span>
+                </a>
+            </div>
+
+            <!-- Cuadrícula Visual de Publicaciones -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Post 1 -->
+                <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer"
+                   class="group bg-white rounded-2xl overflow-hidden border border-sand-dark shadow-md hover:shadow-xl transition-all flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x600/1E2F3D/D4AF37?text=Barra+de+Cafe+IG';"
+                             alt="Montaje Barra de Café Caliente Corporativa"
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-corp-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-semibold gap-4">
+                            <span><i class="fa-solid fa-heart text-gold-bright mr-1"></i> Destacado</span>
+                            <span><i class="fa-brands fa-instagram mr-1"></i> Ver en IG</span>
+                        </div>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <p class="text-xs text-corp-slate line-clamp-2">
+                            <strong class="text-corp-dark">@catering_inclusiongourmet</strong> Montaje de barra de café caliente de especialidad: capuchinos, lattes y café de olla para evento corporativo. ☕✨
+                        </p>
+                        <span class="text-[11px] text-gold-dark font-semibold mt-3 inline-flex items-center gap-1">
+                            #BarraDeCafé #InclusiónGourmet
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Post 2 -->
+                <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer"
+                   class="group bg-white rounded-2xl overflow-hidden border border-sand-dark shadow-md hover:shadow-xl transition-all flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=700&q=80"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x600/2C3E50/D4AF37?text=Capuchinos+Calientes';"
+                             alt="Capuchinos Calientes y Coffee Break"
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-corp-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-semibold gap-4">
+                            <span><i class="fa-solid fa-heart text-gold-bright mr-1"></i> Destacado</span>
+                            <span><i class="fa-brands fa-instagram mr-1"></i> Ver en IG</span>
+                        </div>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <p class="text-xs text-corp-slate line-clamp-2">
+                            <strong class="text-corp-dark">@catering_inclusiongourmet</strong> El aroma de nuestro café recién molido y bocadillos artesanales acompaña cada junta y congreso empresarial. ☕🥐
+                        </p>
+                        <span class="text-[11px] text-gold-dark font-semibold mt-3 inline-flex items-center gap-1">
+                            #CaféDeEspecialidad #CoffeeBreak
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Post 3 -->
+                <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer"
+                   class="group bg-white rounded-2xl overflow-hidden border border-sand-dark shadow-md hover:shadow-xl transition-all flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=700&q=80"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x600/1E2F3D/D4AF37?text=Taquizas+Gourmet';"
+                             alt="Taquizas de Guisado Tradicional Gourmet"
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-corp-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-semibold gap-4">
+                            <span><i class="fa-solid fa-heart text-gold-bright mr-1"></i> Destacado</span>
+                            <span><i class="fa-brands fa-instagram mr-1"></i> Ver en IG</span>
+                        </div>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <p class="text-xs text-corp-slate line-clamp-2">
+                            <strong class="text-corp-dark">@catering_inclusiongourmet</strong> Cazuelas llenas de sabor tradicional mexicano con presentación ejecutiva para tu equipo. 🌮🍲
+                        </p>
+                        <span class="text-[11px] text-gold-dark font-semibold mt-3 inline-flex items-center gap-1">
+                            #TaquizasGourmet #EventosEmpresariales
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Post 4 -->
+                <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer"
+                   class="group bg-white rounded-2xl overflow-hidden border border-sand-dark shadow-md hover:shadow-xl transition-all flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=700&q=80"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x600/2C3E50/D4AF37?text=Inclusion+Laboral';"
+                             alt="Equipo de Catering con Propósito Social"
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-corp-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-semibold gap-4">
+                            <span><i class="fa-solid fa-heart text-gold-bright mr-1"></i> Destacado</span>
+                            <span><i class="fa-brands fa-instagram mr-1"></i> Ver en IG</span>
+                        </div>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <p class="text-xs text-corp-slate line-clamp-2">
+                            <strong class="text-corp-dark">@catering_inclusiongourmet</strong> Gastronomía que une: cada servicio impulsa la inclusión laboral y el orgullo de nuestro equipo. 🤝💛
+                        </p>
+                        <span class="text-[11px] text-gold-dark font-semibold mt-3 inline-flex items-center gap-1">
+                            #CateringConPropósito #RSE
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         6. SECCIÓN EJECUTIVA: COTIZA TU EVENTO POR WHATSAPP (555616145219)
+    =========================================== -->
+    <section id="contacto" class="py-16 sm:py-24 bg-sand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Columna Izquierda: Información de Atención Corporativa -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-gold/20 text-corp-dark border border-gold text-xs font-bold uppercase tracking-widest">
+                        Atención Directa a Empresas
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-corp-dark leading-tight">
+                        Cotiza tu Evento Directamente por <span class="italic text-gold-dark">WhatsApp</span>
+                    </h2>
+                    <p class="text-corp-slate text-sm sm:text-base leading-relaxed">
+                        Brindamos atención personalizada y ágil para áreas de Compras, Recursos Humanos y Dirección. Mándanos un mensaje de WhatsApp al <strong>555616145219</strong> con la fecha tentativa, número de asistentes y el servicio de tu interés para enviarte una propuesta formal a la medida.
+                    </p>
+
+                    <!-- Tarjetas de Contacto Directo -->
+                    <div class="space-y-4 pt-2">
+                        <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20gustar%C3%ADa%20cotizar%20un%20evento%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer"
+                           class="flex items-center gap-4 p-4 rounded-2xl bg-white border-2 border-gold hover:shadow-md transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-2xl group-hover:scale-105 transition-transform">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 block">WhatsApp Corporativo Directo</span>
+                                <span class="font-serif text-xl font-bold text-corp-dark">555616145219</span>
+                                <span class="block text-xs text-corp-muted">Haz clic para abrir el chat en WhatsApp</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer"
+                           class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-sand-dark hover:border-gold shadow-sm transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-corp-dark text-gold-bright flex items-center justify-center text-xl group-hover:scale-105 transition-transform">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-gold-dark block">Instagram Oficial</span>
+                                <span class="font-serif text-lg font-bold text-corp-dark">@catering_inclusiongourmet</span>
+                                <span class="block text-xs text-corp-muted">Síguenos y conoce nuestros montajes</span>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-sand-dark shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-corp-dark text-gold-bright flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-file-signature"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-gold-dark block">Cobertura & Facilidades B2B</span>
+                                <span class="font-serif text-lg font-bold text-corp-dark">CDMX y Área Metropolitana</span>
+                                <span class="block text-xs text-corp-muted">Facturación y constancia de evento con impacto RSE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Centro de Mensajes Rápidos a WhatsApp -->
+                <div class="lg:col-span-7 bg-corp-gradient text-sand-light rounded-3xl p-6 sm:p-10 border-2 border-gold shadow-2xl relative overflow-hidden">
+                    <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-gold/15 blur-2xl pointer-events-none"></div>
+
+                    <div class="relative z-10 space-y-6">
+                        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-white/15 pb-5">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-widest text-gold-bright block">Respuesta Inmediata</span>
+                                <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-1">Mándanos un WhatsApp</h3>
+                            </div>
+                            <div class="flex items-center gap-2 bg-corp-dark/90 px-4 py-2.5 rounded-2xl border border-gold/50">
+                                <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+                                <span class="font-serif text-xl sm:text-2xl font-bold text-gold-bright tracking-wide">555616145219</span>
+                            </div>
+                        </div>
+
+                        <p class="text-sm text-sand/90 leading-relaxed">
+                            Selecciona el tipo de servicio que deseas cotizar para abrir automáticamente una conversación en WhatsApp con nuestro equipo coordinador, o copia nuestro número telefónico con un solo clic:
+                        </p>
+
+                        <!-- Botones Rápidos por Tipo de Evento -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                            <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20una%20*Barra%20de%20Caf%C3%A9%20Caliente*%20para%20un%20evento%20de%20mi%20empresa." target="_blank" rel="noopener noreferrer"
+                               class="p-4 rounded-2xl bg-white/10 hover:bg-gold hover:text-corp-dark border border-gold/40 transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-mug-hot text-gold-bright group-hover:text-corp-dark text-lg"></i>
+                                    <div class="text-left">
+                                        <span class="block font-bold text-sm">Barra de Café Caliente</span>
+                                        <span class="block text-[11px] opacity-80">Pedir informes por WhatsApp</span>
+                                    </div>
+                                </div>
+                                <i class="fa-brands fa-whatsapp text-lg text-emerald-400 group-hover:text-corp-dark"></i>
+                            </a>
+
+                            <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20una%20*Taquiza%20de%20Guisados%20Gourmet*%20para%20un%20evento%20de%20mi%20empresa." target="_blank" rel="noopener noreferrer"
+                               class="p-4 rounded-2xl bg-white/10 hover:bg-gold hover:text-corp-dark border border-gold/40 transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-fire-burner text-gold-bright group-hover:text-corp-dark text-lg"></i>
+                                    <div class="text-left">
+                                        <span class="block font-bold text-sm">Taquiza de Guisados</span>
+                                        <span class="block text-[11px] opacity-80">Pedir informes por WhatsApp</span>
+                                    </div>
+                                </div>
+                                <i class="fa-brands fa-whatsapp text-lg text-emerald-400 group-hover:text-corp-dark"></i>
+                            </a>
+
+                            <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20un%20*Coffee%20Break%20Ejecutivo*%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer"
+                               class="p-4 rounded-2xl bg-white/10 hover:bg-gold hover:text-corp-dark border border-gold/40 transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-briefcase text-gold-bright group-hover:text-corp-dark text-lg"></i>
+                                    <div class="text-left">
+                                        <span class="block font-bold text-sm">Coffee Break Ejecutivo</span>
+                                        <span class="block text-[11px] opacity-80">Pedir informes por WhatsApp</span>
+                                    </div>
+                                </div>
+                                <i class="fa-brands fa-whatsapp text-lg text-emerald-400 group-hover:text-corp-dark"></i>
+                            </a>
+
+                            <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20*Canap%C3%A9s%20o%20Box%20Lunch*%20para%20un%20evento%20corporativo." target="_blank" rel="noopener noreferrer"
+                               class="p-4 rounded-2xl bg-white/10 hover:bg-gold hover:text-corp-dark border border-gold/40 transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-champagne-glasses text-gold-bright group-hover:text-corp-dark text-lg"></i>
+                                    <div class="text-left">
+                                        <span class="block font-bold text-sm">Canapés / Box Lunch</span>
+                                        <span class="block text-[11px] opacity-80">Pedir informes por WhatsApp</span>
+                                    </div>
+                                </div>
+                                <i class="fa-brands fa-whatsapp text-lg text-emerald-400 group-hover:text-corp-dark"></i>
+                            </a>
+                        </div>
+
+                        <!-- Botón Principal de WhatsApp y Copiar Número -->
+                        <div class="pt-3 flex flex-col sm:flex-row gap-3">
+                            <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20gustar%C3%ADa%20cotizar%20un%20evento%20corporativo." target="_blank" rel="noopener noreferrer"
+                               class="flex-1 py-4 px-6 rounded-xl bg-gold-gradient text-corp-dark font-bold text-sm sm:text-base shadow-gold-glow hover:brightness-105 transition-all flex items-center justify-center gap-2.5">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Enviar Mensaje al 555616145219</span>
+                            </a>
+
+                            <button type="button" onclick="copyWhatsAppNumber()"
+                                    class="py-4 px-5 rounded-xl bg-white/10 hover:bg-white/20 text-sand-light font-semibold text-xs sm:text-sm border border-gold/40 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-regular fa-copy text-gold-bright"></i>
+                                <span>Copiar Número</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER CORPORATIVO
+    =========================================== -->
+    <footer class="bg-corp-dark text-sand-light border-t-4 border-gold pt-14 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Columna 1: Marca -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gold-gradient text-corp-dark flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <span class="font-serif text-2xl font-bold text-white">
+                            Inclusión <span class="text-gold-bright italic">Gourmet</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-sand/80 leading-relaxed">
+                        Emprendimiento de catering corporativo y barra de café caliente de especialidad que fusiona excelencia culinaria artesanal con inclusión laboral y Responsabilidad Social Empresarial.
+                    </p>
+                    <div class="pt-1 flex flex-wrap gap-2">
+                        <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-gold hover:text-corp-dark text-gold-light text-xs font-semibold border border-gold/40 transition-all">
+                            <i class="fa-brands fa-instagram text-base"></i>
+                            <span>@catering_inclusiongourmet</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Servicios -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-gold-bright mb-4">Servicios B2B</h4>
+                    <ul class="space-y-2.5 text-xs text-sand/80">
+                        <li><a href="#barra-cafe" class="hover:text-gold-light transition-colors">Barra de Café Caliente de Especialidad</a></li>
+                        <li><a href="#barra-cafe" class="hover:text-gold-light transition-colors">Café de Olla, Chocolate Caliente & Tés</a></li>
+                        <li><a href="#servicios" class="hover:text-gold-light transition-colors">Taquizas de Guisado Gourmet</a></li>
+                        <li><a href="#servicios" class="hover:text-gold-light transition-colors">Coffee Break & Box Lunch Ejecutivo</a></li>
+                        <li><a href="#servicios" class="hover:text-gold-light transition-colors">Canapés y Cócteles Empresariales</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Enlaces Rápidos -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-gold-bright mb-4">Navegación</h4>
+                    <ul class="space-y-2.5 text-xs text-sand/80">
+                        <li><a href="#proposito" class="hover:text-gold-light transition-colors">Propósito Social y RSE</a></li>
+                        <li><a href="#servicios" class="hover:text-gold-light transition-colors">Menús Corporativos</a></li>
+                        <li><a href="#galeria" class="hover:text-gold-light transition-colors">Galería de Eventos</a></li>
+                        <li><a href="#contacto" class="hover:text-gold-light transition-colors">Cotizar por WhatsApp</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Atención Corporativa -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-gold-bright mb-4">Atención Empresarial</h4>
+                    <ul class="space-y-3 text-xs text-sand/80">
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                            <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20interesa%20cotizar%20un%20evento%20corporativo." target="_blank" rel="noopener noreferrer" class="hover:underline font-bold text-white">WhatsApp: 555616145219</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-gold-bright mt-0.5"></i>
+                            <span>Ciudad de México y Área Metropolitana (Servicio a domicilio en oficinas y sedes de eventos)</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-instagram text-gold-bright"></i>
+                            <a href="https://www.instagram.com/catering_inclusiongourmet?avpt=MW0xem5yZDF3aTZ6OQ==" target="_blank" rel="noopener noreferrer" class="hover:underline">@catering_inclusiongourmet</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-sand/60">
+                <p>© 2026 Inclusión Gourmet (@catering_inclusiongourmet). Todos los derechos reservados.</p>
+                <p class="flex items-center gap-1.5">
+                    <span>Gastronomía Artesanal con Impacto Humano</span>
+                    <i class="fa-solid fa-heart text-gold-bright"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         BOTÓN FLOTANTE DE WHATSAPP (555616145219)
+    =========================================== -->
+    <a href="https://wa.me/555616145219?text=Hola%20Inclusi%C3%B3n%20Gourmet,%20me%20gustar%C3%ADa%20cotizar%20un%20evento%20para%20mi%20empresa."
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Cotizar por WhatsApp al 555616145219"
+       class="fixed bottom-6 right-6 z-40 flex items-center gap-3 bg-corp-dark hover:bg-corp-slate text-sand-light pl-4 pr-5 py-3.5 rounded-full border-2 border-gold shadow-2xl transition-transform hover:scale-105 group">
+        <span class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xl shadow-md">
+            <i class="fa-brands fa-whatsapp"></i>
+        </span>
+        <div class="text-left">
+            <span class="block text-[10px] uppercase tracking-wider text-gold-bright font-bold leading-none">Cotiza tu Evento</span>
+            <span class="block text-xs sm:text-sm font-bold text-white mt-0.5">555616145219</span>
+        </div>
+    </a>
+
+    <!-- ==========================================
+         MODAL DE MENÚ DETALLADO POR SERVICIO
+    =========================================== -->
+    <div id="menu-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-corp-dark/80 backdrop-blur-sm p-4">
+        <div class="bg-sand-light rounded-3xl max-w-2xl w-full border-2 border-gold shadow-2xl overflow-hidden animate-fade-in">
+            <div class="bg-corp-dark px-6 py-5 flex items-center justify-between border-b border-gold/40">
+                <div>
+                    <span id="modal-tag" class="text-[11px] uppercase tracking-widest text-gold-bright font-bold block">Menú Degustación</span>
+                    <h3 id="modal-title" class="font-serif text-2xl sm:text-3xl font-bold text-white">Detalle del Servicio</h3>
+                </div>
+                <button onclick="closeMenuModal()" aria-label="Cerrar ventana" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-gold hover:text-corp-dark text-sand-light flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div id="modal-body" class="p-6 sm:p-8 max-h-[70vh] overflow-y-auto space-y-4 text-sm text-corp-slate">
+                <!-- Contenido inyectado dinámicamente -->
+            </div>
+            <div class="px-6 py-4 bg-sand border-t border-sand-dark flex flex-wrap justify-between items-center gap-3">
+                <button onclick="closeMenuModal()" class="px-4 py-2.5 rounded-xl border border-corp-dark/20 text-corp-dark text-xs font-semibold hover:bg-white">
+                    Cerrar
+                </button>
+                <a id="modal-whatsapp-link" href="https://wa.me/555616145219" target="_blank" rel="noopener noreferrer"
+                   class="px-6 py-2.5 rounded-xl bg-corp-dark text-sand-light text-xs sm:text-sm font-semibold border border-gold hover:bg-corp-slate flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                    <span>Cotizar este Menú por WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         NOTIFICACIÓN TOAST PERSONALIZADA (SIN ALERT)
+    =========================================== -->
+    <div id="toast-notification" class="fixed bottom-24 right-6 z-50 hidden max-w-md bg-corp-dark text-sand-light px-5 py-4 rounded-2xl border-2 border-gold shadow-2xl flex items-center gap-3.5">
+        <div class="w-10 h-10 rounded-xl bg-gold text-corp-dark flex-shrink-0 flex items-center justify-center text-lg">
+            <i id="toast-icon" class="fa-solid fa-check"></i>
+        </div>
+        <div class="text-xs sm:text-sm">
+            <p id="toast-title" class="font-bold text-white">Acción completada</p>
+            <p id="toast-message" class="text-sand/85 mt-0.5">Número copiado.</p>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         JAVASCRIPT INTEGRADO
+    =========================================== -->
+    <script>
+        /* -----------------------------------------------------------
+           1. MENÚ MÓVIL RESPONSIVO
+        ----------------------------------------------------------- */
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuIcon.classList.remove('fa-bars');
+                mobileMenuIcon.classList.add('fa-xmark');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenuIcon.classList.remove('fa-xmark');
+                mobileMenuIcon.classList.add('fa-bars');
+            }
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuIcon.classList.remove('fa-xmark');
+                mobileMenuIcon.classList.add('fa-bars');
+            });
+        });
+
+        /* -----------------------------------------------------------
+           2. FILTRO DE TARJETAS DE SERVICIOS CORPORATIVOS
+        ----------------------------------------------------------- */
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const serviceCards = document.querySelectorAll('#services-grid article');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+
+                filterButtons.forEach(b => {
+                    b.className = 'filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-corp-slate hover:bg-corp-dark/10 border border-sand-dark transition-all';
+                });
+                btn.className = 'filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-corp-dark text-gold-bright border border-gold transition-all';
+
+                serviceCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        /* -----------------------------------------------------------
+           3. EXPLORADOR INTERACTIVO DE PREPARACIONES CALIENTES
+        ----------------------------------------------------------- */
+        const hotDrinkDetails = {
+            espresso: {
+                title: 'Espresso Sencillo, Doble & Americano Gourmet:',
+                desc: 'Extracción al momento con grano mexicano 100% arábica de altura, cuerpo balanceado y aroma intenso para iniciar juntas ejecutivas y congresos.'
+            },
+            capuchino: {
+                title: 'Capuchino Clásico & Latte Caliente Cremoso:',
+                desc: 'Preparados al momento por nuestros baristas con leche vaporizada a la temperatura ideal, logrando una espuma sedosa con leche entera, deslactosada o vegetal.'
+            },
+            olla: {
+                title: 'Café de Olla Tradicional con Canela y Piloncillo:',
+                desc: 'Nuestra receta tradicional mexicana infusionada lentamente con canela en rama y piloncillo artesanal, perfecta para acompañar taquizas y eventos matutinos.'
+            },
+            chocolate: {
+                title: 'Moka Caliente, Chocolate Espumoso & Tés Herbales:',
+                desc: 'Delicioso chocolate caliente espumoso, moka artesanal y una selecta variedad de tés e infusiones herbales calientes para todos los gustos de tu equipo.'
+            }
+        };
+
+        function showHotDrinkDetail(key) {
+            const detail = hotDrinkDetails[key];
+            const display = document.getElementById('hot-drink-display');
+            if (!detail || !display) return;
+
+            display.innerHTML = `<strong class="text-gold-bright block mb-1">${detail.title}</strong>${detail.desc}`;
+
+            const buttons = document.querySelectorAll('.hot-drink-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('onclick').includes(key)) {
+                    btn.className = 'hot-drink-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-gold text-corp-dark transition-all';
+                } else {
+                    btn.className = 'hot-drink-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-corp-dark/70 text-sand-light hover:bg-gold/20 border border-gold/30 transition-all';
+                }
+            });
+        }
+
+        /* -----------------------------------------------------------
+           4. MODAL DE MENÚS DETALLADOS (CON ENLACE DIRECTO A WHATSAPP)
+        ----------------------------------------------------------- */
+        const menuCatalog = {
+            cafe: {
+                tag: 'Cafetería Caliente de Especialidad B2B',
+                title: 'Barra de Café Caliente & Tradición',
+                waText: 'Hola Inclusión Gourmet, vi la carta de la Barra de Café Caliente y me gustaría cotizar un evento para mi empresa.',
+                html: `
+                    <p class="text-corp-dark font-medium">Instalación completa de barra móvil con máquina de espresso profesional, molino al momento y baristas de nuestro equipo inclusivo sirviendo exclusivamente bebidas calientes.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-white border border-sand-dark">
+                            <h4 class="font-serif text-lg font-bold text-corp-dark mb-2"><i class="fa-solid fa-mug-saucer text-gold-dark mr-1.5"></i> Barismo de Especialidad</h4>
+                            <ul class="space-y-1.5 text-xs">
+                                <li>• Espresso Sencillo y Doble recién extraído</li>
+                                <li>• Americano Gourmet de grano mexicano</li>
+                                <li>• Capuchino Clásico espumoso</li>
+                                <li>• Latte Caliente Cremoso</li>
+                                <li>• Moka Caliente artesanal</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white border border-sand-dark">
+                            <h4 class="font-serif text-lg font-bold text-corp-dark mb-2"><i class="fa-solid fa-mug-hot text-gold-dark mr-1.5"></i> Tradición & Infusiones Calientes</h4>
+                            <ul class="space-y-1.5 text-xs">
+                                <li>• Café de Olla tradicional con canela y piloncillo</li>
+                                <li>• Chocolate Caliente espumoso</li>
+                                <li>• Selección de Tés e Infusiones herbales calientes</li>
+                                <li>• Opciones de leche entera, deslactosada y vegetal</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            taquiza: {
+                tag: 'Gastronomía Mexicana Ejecutiva',
+                title: 'Taquizas de Guisado Gourmet',
+                waText: 'Hola Inclusión Gourmet, vi su menú de Taquizas de Guisado Gourmet y me gustaría cotizar para mi empresa.',
+                html: `
+                    <p class="text-corp-dark font-medium">Presentación en cazuelas artesanales con buffet ejecutivo, tortillas calientes al momento y barra de complementos.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-white border border-sand-dark">
+                            <h4 class="font-serif text-lg font-bold text-corp-dark mb-2"><i class="fa-solid fa-bowl-food text-gold-dark mr-1.5"></i> Guisados a Elegir (5 a 7 opciones)</h4>
+                            <ul class="space-y-1.5 text-xs">
+                                <li>• Cochinita Pibil con cebolla morada y habanero</li>
+                                <li>• Chicharrón prensado en salsa verde tatemada</li>
+                                <li>• Mole poblano artesanal con pollo deshebrado</li>
+                                <li>• Tinga de res o pollo al chipotle dulce</li>
+                                <li>• Rajas poblanas con elote tierno y crema</li>
+                                <li>• Bistec a la mexicana o en pasilla</li>
+                                <li>• Setas al guajillo (Opción Vegetariana/Vegana)</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white border border-sand-dark">
+                            <h4 class="font-serif text-lg font-bold text-corp-dark mb-2"><i class="fa-solid fa-utensils text-gold-dark mr-1.5"></i> Guarniciones Incluidas</h4>
+                            <ul class="space-y-1.5 text-xs">
+                                <li>• Arroz rojo o blanco a la jardinera</li>
+                                <li>• Frijoles refritos con totopos artesanales</li>
+                                <li>• Salsas de molcajete, guacamole y limones</li>
+                                <li>• Aguas frescas naturales (Jamaica, Horchata, Pepino con limón)</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            coffeebreak: {
+                tag: 'Reuniones & Capacitaciones',
+                title: 'Coffee Break & Box Lunch Ejecutivo',
+                waText: 'Hola Inclusión Gourmet, vi su menú de Coffee Break y Box Lunch Ejecutivo y me gustaría cotizar para mi empresa.',
+                html: `
+                    <p class="text-corp-dark font-medium">Opciones versátiles en montaje buffet continuo o en empaques individuales ecológicos listos para entregar.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-white border border-sand-dark">
+                            <h4 class="font-serif text-lg font-bold text-corp-dark mb-2"><i class="fa-solid fa-bread-slice text-gold-dark mr-1.5"></i> Alimentos Salados</h4>
+                            <ul class="space-y-1.5 text-xs">
+                                <li>• Chapatas gourmet de pechuga de pavo, roast beef o caprese</li>
+                                <li>• Croissants artesanales con jamón serrano y queso gouda</li>
+                                <li>• Mini bagels de queso crema con finas hierbas</li>
+                                <li>• Ensaladas frescas individuales y crudités</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white border border-sand-dark">
+                            <h4 class="font-serif text-lg font-bold text-corp-dark mb-2"><i class="fa-solid fa-cookie-bite text-gold-dark mr-1.5"></i> Dulces, Fruta & Café Caliente</h4>
+                            <ul class="space-y-1.5 text-xs">
+                                <li>• Panadería dulce recién horneada (roles, chocolatines)</li>
+                                <li>• Galletas artesanales y brownies de chocolate</li>
+                                <li>• Copa de fruta de temporada con miel y granola</li>
+                                <li>• Café caliente de grano americano, café de olla y tés calientes</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            canapes: {
+                tag: 'Brindis, Aniversarios & Networking',
+                title: 'Canapés y Cócteles Empresariales',
+                waText: 'Hola Inclusión Gourmet, vi su catálogo de Canapés y Cócteles Empresariales y me gustaría cotizar para mi empresa.',
+                html: `
+                    <p class="text-corp-dark font-medium">Bocadillos de alta cocina diseñados en formato de un bocado para eventos ejecutivos de etiqueta o networking.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-white border border-sand-dark">
+                            <h4 class="font-serif text-lg font-bold text-corp-dark mb-2"><i class="fa-solid fa-wine-glass text-gold-dark mr-1.5"></i> Canapés Salados de Autor</h4>
+                            <ul class="space-y-1.5 text-xs">
+                                <li>• Crostini de higo fresco, queso de cabra y reducción balsámica</li>
+                                <li>• Blini de salmón ahumado con eneldo y alcaparras</li>
+                                <li>• Brocheta caprese con pesto artesanal</li>
+                                <li>• Tartaleta de champiñones al vino blanco</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white border border-sand-dark">
+                            <h4 class="font-serif text-lg font-bold text-corp-dark mb-2"><i class="fa-solid fa-cheese text-gold-dark mr-1.5"></i> Petit Fours & Charcutería</h4>
+                            <ul class="space-y-1.5 text-xs">
+                                <li>• Tablas de quesos maduros, uvas, nueces y carnes frías</li>
+                                <li>• Mini tartas de frutos rojos y ganache de chocolate</li>
+                                <li>• Macarons franceses y trufas artesanales</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        function openMenuModal(key) {
+            const item = menuCatalog[key];
+            if (!item) return;
+
+            document.getElementById('modal-tag').textContent = item.tag;
+            document.getElementById('modal-title').textContent = item.title;
+            document.getElementById('modal-body').innerHTML = item.html;
+
+            const waLink = document.getElementById('modal-whatsapp-link');
+            waLink.href = `https://wa.me/555616145219?text=${encodeURIComponent(item.waText)}`;
+
+            const modal = document.getElementById('menu-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeMenuModal() {
+            const modal = document.getElementById('menu-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        /* -----------------------------------------------------------
+           5. COPIAR NÚMERO DE WHATSAPP AL PORTAPAPELES Y TOAST
+        ----------------------------------------------------------- */
+        let toastTimeout;
+        function showToast(title, message) {
+            const toast = document.getElementById('toast-notification');
+            document.getElementById('toast-title').textContent = title;
+            document.getElementById('toast-message').textContent = message;
+            toast.classList.remove('hidden');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 4000);
+        }
+
+        function copyWhatsAppNumber() {
+            const phone = '555616145219';
+            const tempInput = document.createElement('textarea');
+            tempInput.value = phone;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                showToast('Número de WhatsApp copiado', 'El número 555616145219 está listo para pegarse en tu teléfono.');
+            } catch (err) {
+                showToast('WhatsApp Corporativo', 'Escríbenos directamente al 555616145219.');
+            }
+            document.body.removeChild(tempInput);
+        }
+    </script>
+</body>
+</html>
